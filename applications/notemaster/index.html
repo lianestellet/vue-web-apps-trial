@@ -61,7 +61,9 @@
                     text, 
                     title, 
                     date: new Date(Date.now()).toLocaleString()
-                })                
+                })
+                this.note.text = ''
+                this.note.title = ''
             },
             removeNote(index) {
                 this.notes.splice(index,1)
