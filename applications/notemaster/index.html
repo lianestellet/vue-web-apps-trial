@@ -19,6 +19,20 @@
                     <label>Node Text</label>
                     <textarea class="form-control" v-model="note.text"></textarea>
                 </div>
+                <button class="btn btn-primary" @click="addNote">Submit</button>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="col-sm-4 note" v-for="(note, index) in notes">
+                <div class="card">
+                    <button class="close" @click="removeNote(index)">&times;</button>
+                    <div class="card-block">
+                        <h4 class="card-title">{{note.title}}</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">{{note.date}}</h6>
+                        <p class="card-text">{{note.text}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -31,6 +45,26 @@
             note: {
                 title: '',
                 text: ''
+            },
+            notes: [
+                {
+                    title: 'Visited Hawaii',
+                    text: 'I loved the beaches and delicious fresh coconuts',
+                    date: new Date(Date.now()).toLocaleDateString()
+                }
+            ]
+        },
+        methods: {
+            addNote() { 
+                let { text, title } = this.note
+                this.notes.push({
+                    text, 
+                    title, 
+                    date: new Date(Date.now()).toLocaleString()
+                })                
+            },
+            removeNote(index) {
+                this.notes.splice(index,1)
             }
         }
     })
