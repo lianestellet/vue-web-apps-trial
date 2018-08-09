@@ -3,7 +3,7 @@ import App from './components/App.vue'
 
 import store from './store'
 
-store.commit('INIT_JOKES', [{test: 'test_joke'}, {test_2: 'test_joke2'}])
+store.commit('INIT_JOKES', [])
 
 new Vue({
   el:'#app',
