@@ -10,4 +10,16 @@ The instructor name is David Katz, he teaches well and explain very well.
 ### Done for now:
 
 > basics
-> Notemasternpm
+- Training syntax and rendering with vue
+
+> notemaster
+- a todo list with a single component
+
+> starbase
+- Fetching data and showing as cards
+
+> starbase-router
+- Fetching data with routing
+
+> jokester
+- Fetching data and using vuex pattern (controlling application state)
