@@ -4,7 +4,7 @@ Doing some random stuff with vue and testing if could be used in my personal pro
 
 I am currently doing this course https://www.udemy.com/vue-web-apps/learn/v4/
 
-The instructor name is David Katz, he teaches well and also have a nice speech.
+The instructor name is David Katz, he teaches well and also have a good explanation.
 
 
 ### Done for now:
